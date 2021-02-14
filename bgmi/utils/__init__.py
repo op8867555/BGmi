@@ -383,7 +383,7 @@ FETCH_EPISODE_RANGE_ZH = re.compile(r"[第][\d]{2,}\s?-\s?([\d]{2,})\s?[話话�
 FETCH_EPISODE_RANGE_ALL_ZH = re.compile(r"[全]([^-^第]*?)[話话集]")
 
 FETCH_EPISODE_OVA_OAD = re.compile(r"([\d]{2,})\s?\((?:OVA|OAD)\)]")
-FETCH_EPISODE_WITH_VERSION = re.compile(r"[【\[](\d+)\s? *v\d(?:END)?[】\]]")
+FETCH_EPISODE_WITH_VERSION = re.compile(r"[【\[]?(\d+)\s? *v\d(?:END)?[】\]]?")
 
 FETCH_EPISODE = (
     FETCH_EPISODE_ZH,
